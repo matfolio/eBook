@@ -1,0 +1,46 @@
+
+<head>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/ebookstyle.css">
+
+	<script src="js/index.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<!--  This  section of the eBook application displays a collapse a panel when an aitem is selected on the list  -->
+<div class="detail_collapse">
+	<ul class="nav nav-tabs tabbing"  style="">
+		<li class="active"><a data-toggle="tab" href="#details">Basic information</a></li>
+		<li><a  data-toggle="tab">Images <span class="badge">5</span></a></li>
+	</ul>
+	<div class="tab-content" style="height:500px;overflow:scroll; ">
+		<div class="row tab-pane fade in active" id="details" style="">
+			<div class="col-xs-3" style="">
+				<div><img src="{{$ctrl.details.image}}" alt="itsy bitsy" class="img"></div>
+			</div>
+			<div class="col-xs-6" style="overflow:hidden">
+				<h1> {{$ctrl.details.name}} </h1>
+				<div><span class="detail">Page: {{  $ctrl.details.pages }} </span> <span style="padding-left:20px" class="detail">Price: {{ $ctrl.details.price }} </span></div>
+				<h1> Description </h1>
+				<div><span class="detail">{{$ctrl.details.description}}</span></div>
+				<div class="readmore" disabled>Read more</div>
+			</div>
+			<div class="col-xs-3" style="">
+				<button style="margin: 20px;position:relative;" class="btn btn-success btn-lg" disabled> SELECT </button>
+				<h3> Quich details</h3>
+				<ul>
+					<li>{{$ctrl.details.features}}</li>
+					<li>{{$ctrl.details.genres}}</li>
+					<li>{{$ctrl.details.language}}</li>
+					<li>{{$ctrl.details.ISBN}}</li>
+				</ul>
+				<h3> Stock</h3>
+				<div><span class="stock">Store <span class="pull-right stock">{{ $ctrl.details.store}}</span></span></div>
+				<div><span class="stock">Main warehouse<span class="pull-right stock">{{ $ctrl.details.mainwarehouse}}</span></span></div>
+				<div><span class="stock">Other warehouse<span class="pull-right stock">{{ $ctrl.details.otherwarehouse}}</span></span></div>
+
+			</div>
+		</div>
+	</div>
+</div>

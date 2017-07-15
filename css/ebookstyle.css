@@ -1,0 +1,113 @@
+input[type=text] {
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid #0099cc;
+    box-shadow:2px 2px 2px #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    color:#0099cc;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size : 15px;
+}
+
+.span1:after {
+    border:2px solid #0099cc;
+    color:#0099cc;
+    font-size:10px;
+    font-weight:bold;
+    content: "<"; /* Insert content that looks like bullets */
+    padding: 5px;
+    height:15px;
+
+    /* Or a color you prefer */
+}
+.span2:after {
+    border:2px solid #0099cc;
+    color:#0099cc;
+    font-size:10px;
+    font-weight:bold;
+    content: ">"; /* Insert content that looks like bullets */
+    padding: 5px;
+    height:15px;
+    /* Or a color you prefer */
+}
+
+.tooltip.top .tooltip-inner {
+    background-color:#0099cc;
+    border:1px solid #ddd;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: #0099cc;
+}
+
+.headerwrapper{
+    background:#003366;
+    height:70px;
+    color:#fff;
+}
+.img {
+    width:100px;
+    height:200px;
+    display:block;
+    margin:auto; 
+    padding-top:20px
+}
+
+.tabbing {
+        background:#003366;
+    }
+
+    
+    h1,h3, h5, .stock,.detail, div > ul > li > a , div > ul > li  {
+        color:#008080;
+    }
+    .detail_collapse{
+        border-left:2px solid #008080;
+        border-bottom:2px solid #008080;
+
+    }
+    .readmore {
+        text-align:center;
+        position:relative;
+        bottom: 0;
+        padding-top:20px;
+        color:#008080
+    }
+
+    .alternate:hover,.alternate > div:hover{
+        background:#008080;
+        color:#fff;
+
+    }
+   vertical-align: top;
+        width: 0;
+    }
+    .row {
+       
+    }
+    .title{
+        top:20px;
+        display:block;
+    }
+    .arrow_down {
+        width: 0; 
+        height: 0; 
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #eee;
+
+    }
+    .alternate {
+        padding:20px 0px;
+         border-left:2px solid #008080;
+         border-right:2px solid #008080;
+        border-bottom:1px solid #008080;
+        border-top:1px solid #008080;
+    }

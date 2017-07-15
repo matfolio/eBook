@@ -1,0 +1,26 @@
+<!-- view containg a nested component. This is displayed when the component is rendered to the index.html.  -->
+<div>
+	<div ng-repeat="booklist in $ctrl.books.list | orderBy: $ctrl.sort | filter: $ctrl.search | limitTo: $ctrl.count" >
+
+		<div class="row alternate" data-toggle="collapse" href='#{{booklist.detail}}'>
+
+			<div class="col-xs-3 order">
+				{{booklist.name }}
+			</div>
+			<div class="col-xs-3">
+				{{booklist.author}}
+			</div>
+			<div class="col-xs-3">   
+				{{booklist.features}}
+			</div>
+			<div class="col-xs-3">
+				{{booklist.genres}}
+			</div>
+
+		</div>
+        <!-- Component that holds or contains the ebookdetail view -->
+		<ebook-detail style ="padding-left:0px;" class="panel-collapse collapse" id='{{booklist.detail}}' details="booklist"></ebook-detail>
+	</div>
+</div>
+
+
